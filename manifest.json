@@ -17,6 +17,6 @@
   "start_url": "/pwa-practice/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "theme_color": "blue",
-  "background_color": "green"
+  "theme_color": "#1f2022",
+  "background_color": "#1f2022"
 }
