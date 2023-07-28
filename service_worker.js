@@ -11,15 +11,24 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('fetch', function (event) {
     event.respondWith(
-        /*caches.match(event.request).then((response) => {
-
-            if (response) {
-                return response;
-            }
-            return fetch(event.request);
-        })*/
-        fetch(event.request).catch(function () {
-            return caches.match(event.request);
+        caches.match(event.request).then(function(response) {
+          return response ? response : fetch(event.request);
         })
+      
+        /*fetch(event.request).catch(function () {
+            return caches.match(event.request);
+        })*/
     );
+});
+
+self.addEventListener('push', function(event){
+  console.log('sw event: push called');
+
+  var notificationDataObj = event.data.json();
+  var content = {
+    body: notificationDataObj.body,
+  };
+  event.waitUntil(
+    self.registration.showNotification(notificationDataObj.title, content)
+  );
 });
