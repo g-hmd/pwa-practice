@@ -5,8 +5,8 @@
   "icons": [
     {
       "src": "icon.png",
-      "sizes": "192×192",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "192×192"
     }
   ],
   "start_url": "/pwa-practice/",
