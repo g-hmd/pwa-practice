@@ -1,5 +1,9 @@
 var CACHE_NAME = 'pwav 0.0.2';
-var urlsToCache = ['/pwa-practice/'];
+var urlsToCache = [
+    '/pwa-practice/',
+    '/pwa-practice/register.js',
+    '/pwa-practice/index.css'
+                  ];
 //インストール
 self.addEventListener('install', function (event) {
     event.waitUntil(
