@@ -1,4 +1,3 @@
-/*
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service_worker.js').then(function (registration) {
         console.log('成功');
@@ -7,7 +6,6 @@ if ('serviceWorker' in navigator) {
         console.log('失敗');
     });
 }
-*/
 function onlinecheck() {
     if (window.navigator.onLine) {
         console.log("online");
