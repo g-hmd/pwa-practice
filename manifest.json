@@ -4,6 +4,11 @@
   "description": "デモアプリ",
   "icons": [
     {
+      "src": "icon_48.png",
+      "type": "image/png",
+      "sizes": "48×48"
+    },
+    {
       "src": "icon.png",
       "type": "image/png",
       "sizes": "192×192"
