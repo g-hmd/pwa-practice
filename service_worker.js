@@ -1,6 +1,6 @@
 var CACHE_NAME = 'pwav 0.0.2';
 var urlsToCache = ['/pwa-practice/'];
-
+//インストール
 self.addEventListener('install', function (event) {
     event.waitUntil(
         self.caches.open(CACHE_NAME).then(function (cache) {
@@ -9,6 +9,7 @@ self.addEventListener('install', function (event) {
     );
 });
 
+//cashロード
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request).then(function(response) {
