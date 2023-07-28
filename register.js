@@ -1,7 +1,7 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service_worker.js').then(function (registration) {
         console.log('成功');
-        screenSize();
+        //screenSize();
     }).catch(function (err) {
         console.log('失敗');
     });
