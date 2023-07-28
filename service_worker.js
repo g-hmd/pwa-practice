@@ -1,4 +1,4 @@
-var CACHE_NAME = 'pwav 0.0.2';
+var CACHE_NAME = 'pwav 0.0.3';
 var urlsToCache = [
     '/pwa-practice/',
     '/pwa-practice/register.js',
