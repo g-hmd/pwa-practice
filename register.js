@@ -15,3 +15,8 @@ function onlinecheck() {
         alert('オフライン');
     }
 }
+
+function screenSize(){
+    alert("画面の縦幅"&screen.height);
+    alert('画面の横幅'&screen.width)
+}
