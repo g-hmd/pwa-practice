@@ -1,5 +1,5 @@
 var CACHE_NAME = 'pwa-sample-cahes';
-var urlsToCache = ['/testsite/'];
+var urlsToCache = ['/pwa-practice/'];
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
