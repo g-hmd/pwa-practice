@@ -18,6 +18,6 @@ function onlinecheck() {
 }
 
 function screenSize(){
-    alert("画面の縦幅"&screen.height);
-    alert('画面の横幅'&screen.width)
+    alert("画面の縦幅"&window.outerHeight);
+    alert('画面の横幅'&window.outerWidth)
 }
