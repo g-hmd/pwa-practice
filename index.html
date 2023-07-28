@@ -20,15 +20,5 @@
 	<br>
 	<input type="button" class="main-text" value="キャッシュ更新" onclick="return onlinecheck()" />
 
-	<script>
-	if ('serviceWorker' in navigator) {
-    		navigator.serviceWorker.register('service_worker.js').then(function (registration) {
-        		console.log('成功');
-        		//screenSize();
-    		}).catch(function (err) {
-        		console.log('失敗');
-    		});
-	}
-	</script>
 </body>
 </html>
