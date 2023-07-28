@@ -1,7 +1,51 @@
-* {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
+h1.title, h2.title {
+	color: #333;
+	line-height: 1.2;
+	border-bottom: solid 1px #999;
+	margin-bottom: 8px;
+}
+
+h1.title {
+	font-size: 20px;
+}
+
+h2.title {
+	font-size: 18px;
+}
+
+.main-text {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+@media only screen and (min-width:651px) {
+	　
+	/* middlescreen */
+	h1.title {
+		font-size: 24px;
+	}
+
+	h2.title {
+		font-size: 20px;
+	}
+
+	.main-text {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width:961px) {
+	　
+	/* bigscreen */
+	h1.title {
+		font-size: 26px;
+	}
+
+	h2.title {
+		font-size: 22px;
+	}
+
+	.main-text {
+		font-size: 17px;
+	}
 }
