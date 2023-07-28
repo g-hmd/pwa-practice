@@ -8,6 +8,14 @@ var last_x = null
 var last_y = null
 var canvas = document.getElementById('stage')
 var ctx = canvas.getContext('2d')
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('service_worker.js').then(function(registration) {
+		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	}).catch(function(err) {
+		console.log('ServiceWorker registration failed: ', err);
+	});
+}
+
 function resize() {
 	canvas.setAttribute('width', window.innerWidth*2)
 	canvas.setAttribute('height', window.innerHeight*2)
