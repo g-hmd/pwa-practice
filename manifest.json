@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/testsite/",
+  "start_url": "/pwa-practice/",
   "display": "fullscreen",
   "theme_color": "blue",
   "background_color": "green"
