@@ -2,6 +2,9 @@
   "name": "PWAデモアプリ",
   "short_name": "PWAdemo",
   "description": "デモアプリ",
+  "start_url": "/pwa-practice/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "icon_48.png",
@@ -13,10 +16,5 @@
       "type": "image/png",
       "sizes": "192×192"
     }
-  ],
-  "start_url": "/pwa-practice/",
-  "display": "standalone",
-  "orientation": "portrait-primary",
-  "theme_color": "#1f2022",
-  "background_color": "#1f2022"
+  ]
 }
