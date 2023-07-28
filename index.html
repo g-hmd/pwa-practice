@@ -4,12 +4,17 @@
 	<meta charset="UTF-8">
 	<link rel="icon" href="data:,">
 	<link rel="manifest" href="manifest.json" />
+	<link rel="stylesheet" href="index.css"/>
 	<script type="text/javascript" src="register.js"></script>
 	<title>PWA検証</title>
 </head>
 <body>
-PWAのJSON読込
-<br>
-<input type="button" value="オンラインチェック" onclick="return onlinecheck()"/>
+	<p class="main-text">
+		PWAのJSON読込
+	</p>
+	<br>
+	<input type="button" class="main-text" value="オンラインチェック" onclick="return onlinecheck()"/>
+	<br>
+	<input type="button" class="main-text" value="キャッシュ更新" onclick="return onlinecheck()" />
 </body>
 </html>
