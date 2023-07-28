@@ -10,7 +10,7 @@
     }
   ],
   "start_url": "/pwa-practice/",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "blue",
   "background_color": "green"
 }
