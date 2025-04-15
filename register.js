@@ -4,7 +4,8 @@ if ('serviceWorker' in navigator) {
 	}).catch(function(err) {
 		console.log('ServiceWorker registration failed: ', err);
 	});
-}
+};
+fetch("header.html").then((response) => response.text()).then((data) => document.querySelector("#header").innerHTML = data);
 
 function onlinecheck() {
     if (window.navigator.onLine) {
