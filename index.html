@@ -16,5 +16,9 @@
 	<br>
 	<input type="button" class="main-text" value="ネットワーク確認" onclick="return onlinecheck()" />
 	<input type="button" class="main-text" value="キャッシュ更新" onclick="return onlinecheck()" />
+
+	<script>
+		fetch("header.html").then((response) => response.text()).then((data) => document.querySelector("#header").innerHTML = data);
+	</script>
 </body>
 </html>
