@@ -20,3 +20,7 @@ function screenSize() {
     alert("画面の高さ"&screen.height);
     alert("画面の幅"&screen.width);
 }
+
+function exit(){
+    window.close()
+}
